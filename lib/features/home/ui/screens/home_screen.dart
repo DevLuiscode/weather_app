@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:intl/intl.dart';
 import 'package:weather_app/features/home/ui/bloc/weather_bloc/weather_bloc.dart';
 import 'package:weather_app/features/home/ui/widgets/sunrise_widget.dart';
@@ -100,7 +99,8 @@ class HomeViewBloc extends StatelessWidget {
                     height: 300,
                     width: 300,
                     decoration: const BoxDecoration(
-                        shape: BoxShape.circle, color: Colors.deepPurple),
+                        shape: BoxShape.circle,
+                        color: Color.fromARGB(255, 103, 58, 183)),
                   ),
                 ),
                 Align(
